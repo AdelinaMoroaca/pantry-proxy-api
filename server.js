@@ -72,10 +72,8 @@ app.delete('/:basketName', async (req, res) => {
     }
 });
 
-app.get('/debug', (req, res) => {
-    res.send({ PANTRY_ID });
-});
 
+console.log(PANTRY_ID);
 app.listen(PORT, () => {
     console.log(`Server is running on port http://localhost:${PORT}`);
 });
